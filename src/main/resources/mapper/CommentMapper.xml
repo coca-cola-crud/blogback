@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dyj.blogback.mapper.CommentMapper">
+
+
+    <insert id="addComment" parameterType="com.dyj.blogback.model.Comment" useGeneratedKeys="true">
+      insert into t_comment(nickname,content,email,avatar,createTime,pid,blogId)
+      values(#{nickname},#{content},#{email},#{avatar},#{createTime},#{pid},#{blogId})
+    </insert>
+
+    <select id="findComments"  resultType="com.dyj.blogback.model.Comment">
+        select * from t_comment where blogId=#{blogId} and pid=0
+    </select>
+    <select id="getCommentByParentId" resultType="com.dyj.blogback.model.Comment">
+        SELECT *
+        FROM t_comment
+        WHERE pid=#{parentId}
+    </select>
+</mapper>

@@ -1,0 +1,9 @@
+2021-09-20 10:32:32.179  INFO 24968 --- [main] com.dyj.blogback.BlogbackApplication     : Starting BlogbackApplication using Java 1.8.0_202 on LAPTOP-VQ9EB7UB with PID 24968 (D:\blogback\target\classes started by DYJ in D:\blogback)
+2021-09-20 10:32:32.193  INFO 24968 --- [main] com.dyj.blogback.BlogbackApplication     : No active profile set, falling back to default profiles: default
+2021-09-20 10:32:34.604  INFO 24968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-09-20 10:32:34.624  INFO 24968 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-09-20 10:32:34.624  INFO 24968 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.50]
+2021-09-20 10:32:34.834  INFO 24968 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/v1]     : Initializing Spring embedded WebApplicationContext
+2021-09-20 10:32:34.834  INFO 24968 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2443 ms
+2021-09-20 10:32:36.094  INFO 24968 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path '/v1'
+2021-09-20 10:32:36.104  INFO 24968 --- [main] com.dyj.blogback.BlogbackApplication     : Started BlogbackApplication in 5.007 seconds (JVM running for 10.713)
